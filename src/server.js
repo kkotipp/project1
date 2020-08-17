@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
   for(let key in req.headers) 
     ret.key = req.headers[key];
   ret.ip = req.ip  
-  res.send(req);
+  res.send(ret);
 });
 
 var server = app.listen(3000, function () {
