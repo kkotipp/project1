@@ -1,6 +1,12 @@
 var express = require('express');
 var app = express();
 var audit = require('express-requests-logger')
+var process = require('process')
+
+process.on('SIGINT', () => {
+  console.info("Interrupted")
+  process.exit(0)
+})
 
 app.use(audit({}));
 
