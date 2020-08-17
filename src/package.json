@@ -1,0 +1,21 @@
+{
+  "name": "hostinfo",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://drone.internal/api/badges/michals/hostinfo/status.svg)](https://drone.internal/michals/hostinfo)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.internal:2222/michals/hostinfo.git"
+  },
+  "author": "michals",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-requests-logger": "^3.0.1",
+    "geoip-lite": "^1.3.8"
+  }
+}
